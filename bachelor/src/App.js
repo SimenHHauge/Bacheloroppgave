@@ -1,22 +1,25 @@
-import './App.css';
+import styled from "styled-components";
+
+const Bakgrunn = styled.html`
+  background-color: #FAF2E7;
+  height: 100%;
+`;
+
+const StyledDiv = styled.div`
+  width: 50%;
+  background-color: #D63B3B;
+  color: white;
+  text-align: center;
+  margin-left: 25%;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Bachelorprosjekt
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Veien til din første bolig
-        </a>
-      </header>
-    </div>
+    <Bakgrunn>
+     <StyledDiv>
+        <h1>Veien til din første bolig</h1>
+     </StyledDiv>
+    </Bakgrunn>
   );
 }
 
