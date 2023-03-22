@@ -1,16 +1,19 @@
-import styled from "styled-components";
-import SimulertBoligkjop from "./SimulertBoligkjøp";
+import React from "react";
+import { Route, Routes } from 'react-router-dom';
 
-const Bakgrunn = styled.body`
-  background-color: white;
-`;
+import LandingSide from "./LandingSide.jsx";
+import SimulertBoligkjop from './SimulertBoligkjop/SimulertBoligkjop.jsx';
+import Navigasjon from "./SimulertBoligkjop/Navigasjon.jsx"
 
 function App() {
   return (
-    <Bakgrunn>
-     <SimulertBoligkjop />
-    </Bakgrunn>
+      <div>
+        <Navigasjon />
+          <Routes>
+            <Route path="/" element={<LandingSide />} />
+            <Route path="/SimulertBoligkjop" element={<SimulertBoligkjop />} />
+          </Routes>
+      </div> 
   );
 }
-
 export default App;
