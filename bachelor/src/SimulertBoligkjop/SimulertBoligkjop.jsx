@@ -1,4 +1,6 @@
+import React from "react";
 import styled from "styled-components";
+
 import Hus from "./Bilder/Hus.png";
 
 const Bakgrunn = styled.body`
@@ -15,14 +17,14 @@ const Logo = styled.img`
   margin-right: auto;
 `;
 
-const Tilbake = styled.a`
+/*const Tilbake = styled.a`
     display: block;
     width: 10px;
     height: 10px;
     border-top: 2px solid black;
     border-left: 2px solid black;
     transform: rotate(-45deg);
-`;
+`; */
 
 const Beskrivelse = styled.div`
     text-align: center;
@@ -33,7 +35,7 @@ const Beskrivelse = styled.div`
     box-shadow: -20px 15px #D6DDE9;
 `;
 
-const StartKnapp = styled.button`
+export const StartKnapp = styled.button`
     background-color: #FFBD01;
     display: block;
     margin-left: auto;
@@ -46,8 +48,7 @@ const StartKnapp = styled.button`
 
 function SimulertBoligkjop() {
     return (
-        <Bakgrunn>
-            <Tilbake href="{./App.jsx}"/>        
+        <Bakgrunn>  
             <Overskift>
                 Simuler et kjøp av drømmeboligen din
             </Overskift>
