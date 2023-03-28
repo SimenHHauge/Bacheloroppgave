@@ -56,9 +56,9 @@ function SimulertBoligkjop() {
             <Beskrivelse>
                 Gjennomfør et simulert boligkjøp av drømmeboligen din. Lim inn en Finn-link til boligannonsen du ønsker å kjøpe og fyll inn informasjon om deg selv. <br/><br/> Hunden Zlatan hjelper deg gjennom alle stegene som din personlige rådgiver og megler.
             </Beskrivelse>
-            <StartKnapp>
+            <a href="/LandingSide"><StartKnapp>
                 Start simulator
-            </StartKnapp>
+            </StartKnapp> </a>
         </Bakgrunn>
     )
 }
