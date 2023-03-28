@@ -12,3 +12,9 @@ export const VeienTil = {
     tittel: "Veien til din første bolig",
     tekst: "Gå gjennom det viktigste i fem enkle steg for å bli klar til å kjøpe din første bolig."
 }
+
+export const SimulatorBeskrivelse = {
+    tittel: "Simuler et kjøp av drømmeboligen din",
+    tekst: `Gjennomfør et simulert boligkjøp av drømmeboligen din. Lim inn en Finn-link til boligannonsen du ønsker å kjøpe og fyll inn informasjon om deg.
+            \nHunden Zlatan hjelper deg gjennom alle stegene som din personlige rådgiver og megler.`
+}
