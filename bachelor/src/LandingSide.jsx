@@ -1,34 +1,44 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import Hus from "./SimulertBoligkjop/Bilder/Hus.png";
 import Kalkulatorimg from "./SimulertBoligkjop/Bilder/Kalkulator.png";
 import SPVLogo from "./SimulertBoligkjop/Bilder/SPVLogo.png";
-import VeienBilde from "./SimulertBoligkjop/Bilder/Veien.png";
 import Knapp from "./SimulertBoligkjop/Knapp";
 import { Boligkjop, Kalkulator, VeienTil } from "./Hjelpefiler/Tekster.jsx";
+import BybaneStopp from "./SimulertBoligkjop/BybaneStopp";
 
-const Knapper = styled.a`
+const Knapper = styled(Link)`
     text-decoration: none;
+    color: black;
 `;
 
 const Veien = styled.div`
-    background-color: #F5F5F5;
+    background-color: white;
     text-align: center;
-    border: 1px solid black;
     border-radius: 6px;
     width: 375x;
-    margin-bottom: 20px;
+    margin: 10px;
+    margin-top: 40px;
     padding 10px;
+
+    
 `;
 
-const StartKnapp = styled.button`
+const Bybanen = styled.div`
+    margin-left: 25%;
+`;
+
+export const StartKnapp = styled.button`
     background-color: #FFBD01;
+    font-weight: bold;
     display: block;
     margin-left: auto;
     margin-right: auto; 
-    padding: 15px;
-    margin-top: 50px;
+    padding: 10px;
+    height: 40px;
+    margin-top: 30px;
     border: 0px;
     border-radius: 40px;
 `;
@@ -36,19 +46,19 @@ const StartKnapp = styled.button`
 function LandingSide() {
     return (
     <div>
-        <Knapper href="/">
+        <Knapper to="/SimulertBoligkjop/BybaneStopp">
             <Veien>
                 <img src={SPVLogo} />
                 <h2>{ VeienTil.tittel }</h2>
                 <p>{ VeienTil.tekst }</p>
-                <img src={ VeienBilde } />
+                <Bybanen><BybaneStopp /></Bybanen>
                 <StartKnapp>Se stegene her</StartKnapp>
             </Veien>
         </Knapper>
-        <Knapper href="/SimulertBoligkjop">
+        <Knapper to="/SimulertBoligkjop">
             <Knapp bilde={ Hus } tittel={ Boligkjop.tittel } undertekst={ Boligkjop.tekst }/>
         </Knapper>
-        <Knapper href="/">
+        <Knapper to="https://www.spv.no/lan/boliglan/boliglanskalkulator" target="_blank">
             <Knapp bilde={ Kalkulatorimg } tittel={ Kalkulator.tittel } undertekst={ Kalkulator.tekst }/>
         </Knapper>
     </div>

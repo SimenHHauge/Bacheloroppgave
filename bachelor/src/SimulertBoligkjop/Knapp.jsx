@@ -4,31 +4,36 @@ import styled from "styled-components";
 const Grid = styled.div`
     display: grid;
     grid-template-columns: 20% 70% 10%;
-    border: 1px solid black;
     border-radius: 6px;
     width: 350x;
-    height: 125px;
-    margin-bottom: 20px;
+    height: 150px;
+    margin: 10px;
     bottom: 0;
-    background-color: #F5F5F5;
+    background-color: white;
 `;
 
 const GridItems = styled.div`
     display: block;
     margin: auto;
-    margin-left:10px;
+    padding-left: 5px;
 `;
 
 const StyledImg = styled.img`
     max-width: 60px;
 `;
 
-const Tilbake = styled.div`
+const Tekst = styled.p`
+    font-size: 12px;
+    padding-right: 5px;
+`;
+
+const Pil = styled.div`
     width: 10px;
     height: 10px;
     border-top: 2px solid black;
     border-left: 2px solid black;
     transform: rotate(135deg);
+    margin-right: 20px;
 `;
 
 function Knapp({ bilde, tittel, undertekst }) {
@@ -39,10 +44,10 @@ function Knapp({ bilde, tittel, undertekst }) {
             </GridItems>
             <GridItems>
                 <h3>{ tittel }</h3>
-                <p>{ undertekst }</p>
+                <Tekst>{ undertekst }</Tekst>
             </GridItems>
             <GridItems>
-                <Tilbake />
+                <Pil />
             </GridItems>
         </Grid>
     )

@@ -1,30 +1,33 @@
 import React from "react";
 import styled from "styled-components";
+import {Link} from 'react-router-dom';
 
+import { StartKnapp } from "../LandingSide";
 import Hus from "./Bilder/Hus.png";
+import { SimulatorBeskrivelse } from "../Hjelpefiler/Tekster";
 
 const Bakgrunn = styled.body`
     margin: 20px;
 `;
 
-const Overskift = styled.h1`
-    text-align: center;
-`;
-
-const Logo = styled.img`
-  display: block;
-  margin-left: 35%;
-  margin-right: auto;
-`;
-
-/*const Tilbake = styled.a`
+const Tilbake = styled.a`
     display: block;
     width: 10px;
     height: 10px;
     border-top: 2px solid black;
     border-left: 2px solid black;
     transform: rotate(-45deg);
-`; */
+`;
+
+const Overskift = styled.h1`
+    text-align: center;
+`;
+
+const Bilde = styled.img`
+  display: block;
+  margin-left: 35%;
+  margin-right: auto;
+`;
 
 const Beskrivelse = styled.div`
     text-align: center;
@@ -33,32 +36,27 @@ const Beskrivelse = styled.div`
     margin 15px;
     margin-top: 20px;
     box-shadow: -20px 15px #D6DDE9;
+    white-space: pre-wrap;
 `;
 
-export const StartKnapp = styled.button`
-    background-color: #FFBD01;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    padding: 15px;
-    margin-top: 100px;
-    border: 0px;
-    border-radius: 40px;
+const KnappTekst = styled(Link)`
+    text-decoration: none;
 `;
 
 function SimulertBoligkjop() {
     return (
         <Bakgrunn>  
+            <Tilbake href="/"/>
             <Overskift>
-                Simuler et kjøp av drømmeboligen din
+                { SimulatorBeskrivelse.tittel }
             </Overskift>
-            <Logo src={Hus} />
+            <Bilde src={Hus} />
             <Beskrivelse>
-                Gjennomfør et simulert boligkjøp av drømmeboligen din. Lim inn en Finn-link til boligannonsen du ønsker å kjøpe og fyll inn informasjon om deg selv. <br/><br/> Hunden Zlatan hjelper deg gjennom alle stegene som din personlige rådgiver og megler.
+                { SimulatorBeskrivelse.tekst }
             </Beskrivelse>
-            <a href="/"><StartKnapp>
+            <KnappTekst to="/"><StartKnapp>
                 Start simulator
-            </StartKnapp> </a>
+            </StartKnapp></KnappTekst>
         </Bakgrunn>
     )
 }
