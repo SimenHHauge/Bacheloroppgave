@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 
 import LandingSide from "./LandingSide.jsx";
 import SimulertBoligkjop from './SimulertBoligkjop/SimulertBoligkjop.jsx';
-import BybaneStopp from "./SimulertBoligkjop/BybaneStopp.jsx";
+import BybaneStopp from "./Veien/BybaneStopp.jsx";
 
 function App() {
   return (

@@ -12,14 +12,14 @@ const Stopp = styled.div`
     font-size: 15px;
     font-weight: bold;
     border-radius: 15px;
-    border: 1px solid #F3ADA5;
+    border: 1.5px solid #F3ADA5;
     margin-bottom: 5px;
     height: 30px;
     width: 30px;
 `;
 
 const Linje = styled.div`
-    border-left: 1px solid #F3ADA5;
+    border-left: 1.5px solid #F3ADA5;
     height: 5px;
     position: absolute;
     margin-top: -5px;
@@ -32,7 +32,7 @@ const Tekst = styled.p`
     position: absolute;
     margin-left: 40px;
     margin-top: -28px;
-`
+`;
 
 function BybaneStopp() {
 return (

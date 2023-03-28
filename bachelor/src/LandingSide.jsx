@@ -7,7 +7,7 @@ import Kalkulatorimg from "./SimulertBoligkjop/Bilder/Kalkulator.png";
 import SPVLogo from "./SimulertBoligkjop/Bilder/SPVLogo.png";
 import Knapp from "./SimulertBoligkjop/Knapp";
 import { Boligkjop, Kalkulator, VeienTil } from "./Hjelpefiler/Tekster.jsx";
-import BybaneStopp from "./SimulertBoligkjop/BybaneStopp";
+import BybaneStopp from "./Veien/BybaneStopp";
 
 const Knapper = styled(Link)`
     text-decoration: none;
@@ -21,9 +21,7 @@ const Veien = styled.div`
     width: 375x;
     margin: 10px;
     margin-top: 40px;
-    padding 10px;
-
-    
+    padding 10px;    
 `;
 
 const Bybanen = styled.div`
