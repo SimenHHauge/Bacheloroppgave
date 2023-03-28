@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 
 import Hus from "./SimulertBoligkjop/Bilder/Hus.png";
 import Kalkulatorimg from "./SimulertBoligkjop/Bilder/Kalkulator.png";
 import SPVLogo from "./SimulertBoligkjop/Bilder/SPVLogo.png";
+import VeienBilde from "./SimulertBoligkjop/Bilder/Veien.png";
 import Knapp from "./SimulertBoligkjop/Knapp";
 import { Boligkjop, Kalkulator, VeienTil } from "./Hjelpefiler/Tekster.jsx";
 
@@ -12,10 +13,10 @@ const Knapper = styled.a`
 `;
 
 const Veien = styled.div`
+    background-color: #F5F5F5;
     text-align: center;
     border: 1px solid black;
     border-radius: 6px;
-    background-color: #FAF2E7;
     width: 375x;
     margin-bottom: 20px;
     padding 10px;
@@ -27,7 +28,7 @@ const StartKnapp = styled.button`
     margin-left: auto;
     margin-right: auto; 
     padding: 15px;
-    margin-top: 100px;
+    margin-top: 50px;
     border: 0px;
     border-radius: 40px;
 `;
@@ -40,7 +41,8 @@ function LandingSide() {
                 <img src={SPVLogo} />
                 <h2>{ VeienTil.tittel }</h2>
                 <p>{ VeienTil.tekst }</p>
-                <a href="/"><StartKnapp>Se stegene her</StartKnapp></a>
+                <img src={ VeienBilde } />
+                <StartKnapp>Se stegene her</StartKnapp>
             </Veien>
         </Knapper>
         <Knapper href="/SimulertBoligkjop">
