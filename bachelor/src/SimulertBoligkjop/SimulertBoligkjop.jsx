@@ -6,11 +6,11 @@ import { StartKnapp } from "../LandingSide";
 import Hus from "./Bilder/Hus.png";
 import { SimulatorBeskrivelse } from "../Hjelpefiler/Tekster";
 
-const Bakgrunn = styled.body`
+export const Bakgrunn = styled.body`
     margin: 20px;
 `;
 
-const Tilbake = styled.a`
+export const Tilbake = styled(Link)`
     display: block;
     width: 10px;
     height: 10px;
@@ -19,7 +19,7 @@ const Tilbake = styled.a`
     transform: rotate(-45deg);
 `;
 
-const Overskift = styled.h1`
+export const Overskift = styled.h1`
     text-align: center;
 `;
 
@@ -46,7 +46,7 @@ const KnappTekst = styled(Link)`
 function SimulertBoligkjop() {
     return (
         <Bakgrunn>  
-            <Tilbake href="/"/>
+            <Tilbake to="/"/>
             <Overskift>
                 { SimulatorBeskrivelse.tittel }
             </Overskift>
