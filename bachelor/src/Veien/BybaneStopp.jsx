@@ -2,37 +2,37 @@ import React from "react";
 import styled from "styled-components";
 
 const Bybanen = styled.div`
-    width: 50%;
+    margin: auto;
 `;
 
 const Stopp = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
-    border-radius: 15px;
-    border: 1px solid #F3ADA5;
-    margin-bottom: 5px;
+    border-radius: 30px;
+    border: 3px solid #DD1D1F;
+    margin-bottom: 10px;
     height: 30px;
     width: 30px;
 `;
 
 const Linje = styled.div`
-    border-left: 1px solid #F3ADA5;
-    height: 5px;
+    border-left: 3px solid #DD1D1F;
+    height: 10px;
     position: absolute;
-    margin-top: -5px;
-    margin-left: 15px;
+    margin-top: -10px;
+    margin-left: 16px;
 `;
 
 const Tekst = styled.p`
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     position: absolute;
-    margin-left: 40px;
-    margin-top: -28px;
-`
+    margin-left: 45px;
+    margin-top: -38px;
+`;
 
 function BybaneStopp() {
 return (

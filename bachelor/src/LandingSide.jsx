@@ -7,7 +7,7 @@ import Kalkulatorimg from "./SimulertBoligkjop/Bilder/Kalkulator.png";
 import SPVLogo from "./SimulertBoligkjop/Bilder/SPVLogo.png";
 import Knapp from "./SimulertBoligkjop/Knapp";
 import { Boligkjop, Kalkulator, VeienTil } from "./Hjelpefiler/Tekster.jsx";
-import BybaneStopp from "./SimulertBoligkjop/BybaneStopp";
+import BybaneStopp from "./Veien/BybaneStopp";
 
 const Knapper = styled(Link)`
     text-decoration: none;
@@ -20,14 +20,18 @@ const Veien = styled.div`
     border-radius: 6px;
     width: 375x;
     margin: 10px;
-    margin-top: 40px;
-    padding 10px;
-
-    
+    margin-top: 30px;
+    padding 10px;    
 `;
 
 const Bybanen = styled.div`
-    margin-left: 25%;
+    width: 70%;
+    padding: 20px;
+    padding-left: 40px;
+    margin-top: 20px;
+    margin-left: 6%;
+    background-color: #F5F7FA;
+    border-radius: 10px;
 `;
 
 export const StartKnapp = styled.button`
@@ -39,6 +43,7 @@ export const StartKnapp = styled.button`
     padding: 10px;
     height: 40px;
     margin-top: 30px;
+    margin-bottom: 25px;
     border: 0px;
     border-radius: 40px;
 `;
@@ -46,7 +51,7 @@ export const StartKnapp = styled.button`
 function LandingSide() {
     return (
     <div>
-        <Knapper to="/SimulertBoligkjop/BybaneStopp">
+        <Knapper to="/Veien/VeienTilDinForsteBolig">
             <Veien>
                 <img src={SPVLogo} />
                 <h2>{ VeienTil.tittel }</h2>
