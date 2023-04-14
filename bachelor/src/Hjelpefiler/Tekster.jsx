@@ -9,12 +9,17 @@ export const Kalkulator = {
 }
 
 export const VeienTil = {
-    tittel: "Veien til din første bolig",
+    tittel: "Bli kjent med de fem stegene i boligkjøpsprosessen",
     tekst: "Gå gjennom det viktigste i fem enkle steg for å bli klar til å kjøpe din første bolig."
 }
 
 export const SimulatorBeskrivelse = {
     tittel: "Simuler et kjøp av drømmeboligen din",
-    tekst: `Gjennomfør et simulert boligkjøp av drømmeboligen din. Lim inn en Finn-link til boligannonsen du ønsker å kjøpe og fyll inn informasjon om deg.
-            \nHunden Zlatan hjelper deg gjennom alle stegene som din personlige rådgiver og megler.`
+    tekst: `I denne simulatoren vil du gå gjennom det viktigste av \bde fem stegene i boligkjøpsprosessen\b: 
+    \n 1. Rådgivningstime 
+    \n 2. Visning 
+    \n 3. Budrunde 
+    \n 4. Overtakelsen 
+    \n 5. Hva skjer nå? 
+    \n Hunden Zlatan vil hjelpe deg i alle stegene gjennom hele boligkjøpsreisen.`
 }

@@ -9,7 +9,7 @@ const Grid = styled.div`
     height: 150px;
     margin: 10px;
     bottom: 0;
-    background-color: white;
+    background-color: #A7C3A7;
 `;
 
 const GridItems = styled.div`
@@ -23,8 +23,9 @@ const StyledImg = styled.img`
 `;
 
 const Tekst = styled.p`
-    font-size: 12px;
+    font-size: 13px;
     padding-right: 5px;
+    margin-top: -10px;
 `;
 
 const Pil = styled.div`
@@ -43,7 +44,7 @@ function Knapp({ bilde, tittel, undertekst }) {
                 <StyledImg src={ bilde } />
             </GridItems>
             <GridItems>
-                <h3>{ tittel }</h3>
+                <h2>{ tittel }</h2>
                 <Tekst>{ undertekst }</Tekst>
             </GridItems>
             <GridItems>
