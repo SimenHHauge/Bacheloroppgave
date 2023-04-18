@@ -2,15 +2,15 @@ import React from "react";
 import { Route, Routes } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-import LandingSide from "./LandingSide.jsx";
-import SimulertBoligkjop from './SimulertBoligkjop/SimulertBoligkjop.jsx';
-import VeienTilDinForsteBolig from './Veien/VeienTilDinForsteBolig.jsx';
+import LandingSide from "./LandingSide";
+import SimulertBoligkjop from './SimulertBoligkjop/SimulertBoligkjop';
+import VeienTilDinForsteBolig from './Veien/VeienTilDinForsteBolig';
 
 function App() {
   return (
       <div>
         <Helmet>
-          <style>{'body {background-color: #FCF8F3;}'}</style>
+          <style>{'body {background-color: #547A6A;}'}</style>
         </Helmet>
 
           <Routes>

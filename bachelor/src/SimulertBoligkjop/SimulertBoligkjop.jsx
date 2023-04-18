@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { StartKnapp } from "../LandingSide";
-import Hus from "./Bilder/Hus.png";
+import Hus from "../Hjelpefiler/Bilder/Hus.png";
 import { SimulatorBeskrivelse } from "../Hjelpefiler/Tekster";
 
 export const Bakgrunn = styled.body`
@@ -30,9 +30,8 @@ const Bilde = styled.img`
 `;
 
 const Beskrivelse = styled.div`
-    text-align: center;
     padding: 15px;
-    background-color: #F5F7FA;
+    background-color: #A7C3A7;
     margin 15px;
     margin-top: 20px;
     box-shadow: -20px 15px #D6DDE9;

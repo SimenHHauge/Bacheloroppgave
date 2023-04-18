@@ -5,7 +5,7 @@ const Bybanen = styled.div`
     margin: auto;
 `;
 
-const Stopp = styled.div`
+export const Stopp = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
@@ -18,7 +18,7 @@ const Stopp = styled.div`
     width: 30px;
 `;
 
-const Linje = styled.div`
+export const Linje = styled.div`
     border-left: 3px solid #DD1D1F;
     height: 10px;
     position: absolute;
@@ -26,7 +26,7 @@ const Linje = styled.div`
     margin-left: 16px;
 `;
 
-const Tekst = styled.p`
+export const Tekst = styled.p`
     font-size: 17px;
     font-weight: bold;
     position: absolute;
@@ -41,7 +41,7 @@ return (
         <Linje />
         <Tekst>Få finansieringsbevis</Tekst>
         <Stopp>2</Stopp>
-            <Linje />
+        <Linje />
         <Tekst>Bli klar for visning</Tekst>
         <Stopp>3</Stopp>
         <Linje />

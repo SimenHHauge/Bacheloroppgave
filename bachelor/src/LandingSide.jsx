@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import Hus from "./SimulertBoligkjop/Bilder/Hus.png";
-import Kalkulatorimg from "./SimulertBoligkjop/Bilder/Kalkulator.png";
-import SPVLogo from "./SimulertBoligkjop/Bilder/SPVLogo.png";
-import Knapp from "./SimulertBoligkjop/Knapp";
-import { Boligkjop, Kalkulator, VeienTil } from "./Hjelpefiler/Tekster.jsx";
+import Hus from "./Hjelpefiler/Bilder/Hus.png";
+import Kalkulatorimg from "./Hjelpefiler/Bilder/Kalkulator.png";
+import SPVLogo from "./Hjelpefiler/Bilder/SPVLogo.png";
+import Knapp from "./Hjelpefiler/Knapp";
+import { Boligkjop, Kalkulator, VeienTil } from "./Hjelpefiler/Tekster";
 import BybaneStopp from "./Veien/BybaneStopp";
 
 const Knapper = styled(Link)`
@@ -15,22 +15,21 @@ const Knapper = styled(Link)`
 `;
 
 const Veien = styled.div`
-    background-color: white;
+    background-color: #A7C3A7;
     text-align: center;
     border-radius: 6px;
-    width: 375x;
+    width: 300x;
     margin: 10px;
     margin-top: 30px;
     padding 10px;    
 `;
 
 const Bybanen = styled.div`
-    width: 70%;
+    width: 60%;
     padding: 20px;
-    padding-left: 40px;
-    margin-top: 20px;
-    margin-left: 6%;
-    background-color: #F5F7FA;
+    margin-top: 30px;
+    margin-left: 13%;
+    background-color: #DDEDDD;
     border-radius: 10px;
 `;
 
@@ -53,9 +52,9 @@ function LandingSide() {
     <div>
         <Knapper to="/Veien/VeienTilDinForsteBolig">
             <Veien>
-                <img src={SPVLogo} />
+                <img src={SPVLogo} alt="Spv logo"/>
                 <h2>{ VeienTil.tittel }</h2>
-                <p>{ VeienTil.tekst }</p>
+                {/*<p>{ VeienTil.tekst }</p>*/}
                 <Bybanen><BybaneStopp /></Bybanen>
                 <StartKnapp>Se stegene her</StartKnapp>
             </Veien>
