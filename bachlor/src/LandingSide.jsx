@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import Hus from "./Hjelpefiler/Bilder/Hus.png";
 import Kalkulatorimg from "./Hjelpefiler/Bilder/Kalkulator.png";
@@ -8,6 +9,7 @@ import SPVLogo from "./Hjelpefiler/Bilder/SPVLogo.png";
 import Knapp from "./Hjelpefiler/Knapp";
 import { Boligkjop, Kalkulator, VeienTil } from "./Hjelpefiler/Tekster";
 import BybaneStopp from "./Veien/BybaneStopp";
+
 
 const Knapper = styled(Link)`
     text-decoration: none;
@@ -50,11 +52,14 @@ export const StartKnapp = styled.button`
 function LandingSide() {
     return (
     <div>
+        <Helmet>
+            <style>{'body {background-color: #547A6A;}'}</style>
+        </Helmet>
+
         <Knapper to="/Veien/VeienTilDinForsteBolig">
             <Veien>
                 <img src={SPVLogo} alt="Spv logo"/>
                 <h2>{ VeienTil.tittel }</h2>
-                {/*<p>{ VeienTil.tekst }</p>*/}
                 <Bybanen><BybaneStopp /></Bybanen>
                 <StartKnapp>Se stegene her</StartKnapp>
             </Veien>

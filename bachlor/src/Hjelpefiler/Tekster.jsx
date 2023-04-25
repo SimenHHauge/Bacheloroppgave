@@ -15,7 +15,7 @@ export const VeienTil = {
 
 export const SimulatorBeskrivelse = {
     tittel: "Simuler et kjøp av drømmeboligen din",
-    tekst: `I denne simulatoren vil du gå gjennom det viktigste av \bde fem stegene i boligkjøpsprosessen\b: 
+    tekst: `I denne simulatoren vil du gå gjennom det viktigste av de fem stegene i boligkjøpsprosessen: 
     \n 1. Rådgivningstime 
     \n 2. Visning 
     \n 3. Budrunde 
