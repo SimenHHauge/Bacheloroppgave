@@ -7,6 +7,7 @@ import Hus from "../Hjelpefiler/Bilder/Hus.png";
 import { SimulatorBeskrivelse } from "../Hjelpefiler/Tekster";
 
 export const Bakgrunn = styled.body`
+    background-color: A7C3A7;
     margin: 20px;
 `;
 
