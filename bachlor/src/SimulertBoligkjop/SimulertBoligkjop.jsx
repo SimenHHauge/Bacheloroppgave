@@ -32,7 +32,7 @@ const Bilde = styled.img`
 
 const Beskrivelse = styled.div`
     padding: 15px;
-    background-color: #F5F7FA;
+    background-color: #A7C3A7;
     margin 15px;
     margin-top: 20px;
     box-shadow: -20px 15px #D6DDE9;
