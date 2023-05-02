@@ -7,7 +7,6 @@ import Hus from "../Hjelpefiler/Bilder/Hus.png";
 import { SimulatorBeskrivelse } from "../Hjelpefiler/Tekster";
 
 export const Bakgrunn = styled.body`
-    background-color: A7C3A7;
     margin: 20px;
 `;
 
@@ -32,7 +31,7 @@ const Bilde = styled.img`
 
 const Beskrivelse = styled.div`
     padding: 15px;
-    background-color: #A7C3A7;
+    background-color: #F5F7FA;
     margin 15px;
     margin-top: 20px;
     box-shadow: -20px 15px #D6DDE9;
@@ -45,7 +44,7 @@ const KnappTekst = styled(Link)`
 
 function SimulertBoligkjop() {
     return (
-        <Bakgrunn>  
+        <Bakgrunn> 
             <Tilbake to="/"/>
             <Overskift>
                 { SimulatorBeskrivelse.tittel }
@@ -54,9 +53,11 @@ function SimulertBoligkjop() {
             <Beskrivelse>
                 { SimulatorBeskrivelse.tekst }
             </Beskrivelse>
-            <KnappTekst to="/"><StartKnapp>
-                Start simulator
-            </StartKnapp></KnappTekst>
+            <KnappTekst to="/">
+                <StartKnapp>
+                    Start simulator
+                </StartKnapp>
+            </KnappTekst>
         </Bakgrunn>
     )
 }

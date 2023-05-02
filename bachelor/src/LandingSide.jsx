@@ -58,17 +58,17 @@ function LandingSide() {
 
         <Knapper to="/Veien/VeienTilDinForsteBolig">
             <Veien>
-                <img src={SPVLogo} alt="Spv logo"/>
+                <img src={SPVLogo} alt="Spv logo" aria-label="Veien til din første bolig"/>
                 <h2>{ VeienTil.tittel }</h2>
                 <Bybanen><BybaneStopp /></Bybanen>
                 <StartKnapp>Se stegene her</StartKnapp>
             </Veien>
         </Knapper>
         <Knapper to="/SimulertBoligkjop">
-            <Knapp bilde={ Hus } tittel={ Boligkjop.tittel } undertekst={ Boligkjop.tekst }/>
+            <Knapp bilde={ Hus } ariaTekst="Simulert boligkjøp" tittel={ Boligkjop.tittel } undertekst={ Boligkjop.tekst }/>
         </Knapper>
         <Knapper to="https://www.spv.no/lan/boliglan/boliglanskalkulator" target="_blank">
-            <Knapp bilde={ Kalkulatorimg } tittel={ Kalkulator.tittel } undertekst={ Kalkulator.tekst }/>
+            <Knapp bilde={ Kalkulatorimg } ariaTekst="Boliglånskalkulator" tittel={ Kalkulator.tittel } undertekst={ Kalkulator.tekst }/>
         </Knapper>
     </div>
     )
