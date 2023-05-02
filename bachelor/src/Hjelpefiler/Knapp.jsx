@@ -37,11 +37,11 @@ const Pil = styled.div`
     margin-right: 20px;
 `;
 
-function Knapp({ bilde, tittel, undertekst }) {
+function Knapp({ bilde, ariaTekst, tittel, undertekst }) {
     return (
         <Grid>
             <GridItems>
-                <StyledImg src={ bilde } />
+                <StyledImg src={ bilde } aria-label={ariaTekst}/>
             </GridItems>
             <GridItems>
                 <h2>{ tittel }</h2>
